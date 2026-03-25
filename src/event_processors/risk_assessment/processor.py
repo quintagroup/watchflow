@@ -83,7 +83,7 @@ class RiskAssessmentProcessor(BaseEventProcessor):
 
             logger.info(
                 f"Risk assessment complete for {repo}#{pr_number}: "
-                f"{risk_assessment_result.risk_level} ({len(risk_assessment_result.signals)} signals triggered)"
+                f"{risk_assessment_result.level} ({len(risk_assessment_result.signals)} signals triggered)"
             )
 
             # Post comment
